@@ -24,7 +24,7 @@
 
 #pragma mark - DOObject
 - (DOResponse *)excute {
-    return nil;
+    return [self excuteWithTarget:nil];
 }
 
 - (DOResponse *)excuteWithTarget:(DOObject *)target {
