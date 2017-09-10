@@ -10,9 +10,8 @@
 
 @implementation DOPageDemand
 
-+ (UIViewController *)viewController {
-    UIViewController *controller = [[UIViewController alloc] init];
-    return controller;
+- (Class)classOfController {
+    return [UIViewController class];
 }
 
 @end

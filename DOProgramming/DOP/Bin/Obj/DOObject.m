@@ -14,6 +14,10 @@
 
 @implementation DOObject
 
+- (void)dealloc {
+    NSLog(@"释放了Demand<%@:%@>", NSStringFromClass([self class]), [self class]);
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {

@@ -11,6 +11,6 @@
 
 @interface DOPageDemand : DOObject
 
-+ (UIViewController *)viewController;
+- (Class)classOfController;
 
 @end

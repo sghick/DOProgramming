@@ -11,9 +11,8 @@
 
 @implementation DOMainHomeDemand
 
-+ (UIViewController *)viewController {
-    DOMainHomeController *controller = [[DOMainHomeController alloc] init];
-    return controller;
+- (Class)classOfController {
+    return [DOMainHomeController class];
 }
 
 @end
