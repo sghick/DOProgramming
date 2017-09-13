@@ -10,6 +10,4 @@
 
 @interface DOMainHomeDemand : DOPageDemand
 
-- (void)respondsButton:(UIButton *)button textFiled:(UITextField *)textFiled label:(UILabel *)label imageView:(UIImageView *)imageView;
-
 @end
