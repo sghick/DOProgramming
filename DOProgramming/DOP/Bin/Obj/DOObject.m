@@ -15,7 +15,7 @@
 @implementation DOObject
 
 - (void)dealloc {
-    NSLog(@"释放了Demand<%@:%@>", NSStringFromClass([self class]), [self class]);
+    NSLog(@"释放了Demand:<%@,%p>", [self class], self);
 }
 
 - (instancetype)init {
@@ -26,17 +26,47 @@
     return self;
 }
 
-#pragma mark - DOObject
-- (DOResponse *)excute {
-    return [self excuteWithTarget:nil];
++ (instancetype)demand {
+    DOObject *obj = [[self alloc] init];
+    return obj;
 }
+#pragma mark - DOViewProtocol
 
-- (DOResponse *)excuteWithTarget:(DOObject *)target {
+- (UIViewController *)featchViewControllerWithIdentifier:(NSString *)identifier {
+    return nil;
+}
+- (UIView *)featchViewWithIdentifier:(NSString *)identifier {
     return nil;
 }
 
-@end
+#pragma mark - DOResponseProtocol
 
-@implementation DOResponse
+- (BOOL)shouldResponseWithIdentifier:(NSString *)identifier {
+    return YES;
+}
+- (void)responseWithIdentifier:(NSString *)identifier {
+    ///
+}
+
+#pragma mark - DOAnimationProtocol
+
+- (void)animatedWithIdentifier:(NSString *)identifier {
+    ///
+}
+
+#pragma mark - DODataProtocol
+
+- (id)featchDataWithIdentifier:(NSString *)identifier {
+    return nil;
+}
+- (id)fillData:(id)data withIdentifier:(NSString *)identifier {
+    return nil;
+}
+
+#pragma mark - DOProtocol
+
+- (void)addDObject:(id<DOProtocol>)dobject {
+    ///
+}
 
 @end

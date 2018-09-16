@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "DONavigationDemand.h"
+#import "DOTabBarRoot.h"
+#import "DONavigationRoot.h"
+#import "DOMainHome.h"
+#import "DOMainMe.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +23,12 @@
     // Override point for customization after application launch.
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window = window;
-    DONavigationDemand *navDemand = [[DONavigationDemand alloc] initWithWindow:window];
-    [navDemand excute];
+//    DONavigationRoot *root = [DONavigationRoot demand];
+    DOTabBarRoot *root = [DOTabBarRoot demand];
+    [root addDObject:[DOMainHome demand]];
+    [root addDObject:[DOMainMe demand]];
+    
+    [root makeKeyAndVisibleInWindow:window];
     return YES;
 }
 
