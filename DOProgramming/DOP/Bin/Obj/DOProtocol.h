@@ -47,6 +47,9 @@ DOResponseProtocol,
 DOAnimationProtocol,
 DODataProtocol>
 
+@property (strong, nonatomic) NSMutableArray *dobjects;
+
 - (void)addDObject:(id<DOProtocol>)dobject;
+- (void)removeDObjects;
 
 @end

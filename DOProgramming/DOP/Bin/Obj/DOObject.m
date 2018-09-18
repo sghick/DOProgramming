@@ -14,6 +14,8 @@
 
 @implementation DOObject
 
+@synthesize dobjects = _dobjects;
+
 - (void)dealloc {
     NSLog(@"释放了Demand:<%@,%p>", [self class], self);
 }
@@ -66,7 +68,21 @@
 #pragma mark - DOProtocol
 
 - (void)addDObject:(id<DOProtocol>)dobject {
-    ///
+    if (!dobject) {
+        return;
+    }
+    [self.dobjects addObject:dobject];;
+}
+
+- (void)removeDObjects {
+    [self.dobjects removeAllObjects];
+}
+
+- (NSMutableArray *)dobjects {
+    if (!_dobjects) {
+        _dobjects = [NSMutableArray array];
+    }
+    return _dobjects;
 }
 
 @end

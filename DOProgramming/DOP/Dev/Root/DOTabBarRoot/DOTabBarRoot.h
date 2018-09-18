@@ -10,6 +10,4 @@
 
 @interface DOTabBarRoot : DORoot
 
-- (void)resetRoot;
-
 @end
