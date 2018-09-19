@@ -14,6 +14,8 @@
 
 @implementation DOObject
 
+@synthesize name = _name;
+@synthesize path = _path;
 @synthesize dobjects = _dobjects;
 
 - (void)dealloc {
@@ -23,17 +25,32 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        NSLog(@"加载了Demand:<%@,%p>", [self class], self);
         _uuid = [NSUUID UUID].UUIDString;
     }
     return self;
 }
 
+#pragma mark - DOProtocol
+
 + (instancetype)demand {
+    return [self demandWithName:nil];
+}
+
++ (instancetype)demandWithName:(NSString *)name {
     DOObject *obj = [[self alloc] init];
+    obj.name = name;
     return obj;
 }
+
 #pragma mark - DOViewProtocol
 
+- (void)makeKeyAndVisibleInWindow:(UIWindow *)window {
+    if (!window || ![window isKindOfClass:[UIWindow class]]) {
+        return;
+    }
+    [window makeKeyAndVisible];
+}
 - (UIViewController *)featchViewControllerWithIdentifier:(NSString *)identifier {
     return nil;
 }
@@ -49,9 +66,6 @@
 - (void)responseWithIdentifier:(NSString *)identifier {
     ///
 }
-
-#pragma mark - DOAnimationProtocol
-
 - (void)animatedWithIdentifier:(NSString *)identifier {
     ///
 }

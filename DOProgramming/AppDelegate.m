@@ -27,7 +27,7 @@
     DOTabBarRoot *root = [DOTabBarRoot demand];
     [root addDObject:[DOMainHome demand]];
     [root addDObject:[DOMainMe demand]];
-    
+
     [root makeKeyAndVisibleInWindow:window];
     return YES;
 }

@@ -11,9 +11,6 @@
 @interface DOObject : NSObject<DOProtocol>
 
 @property (copy  , nonatomic, readonly) NSString *uuid;
-@property (copy  , nonatomic) NSString *name;
 @property (assign, nonatomic) NSInteger tag;
-
-+ (instancetype)demand;
 
 @end

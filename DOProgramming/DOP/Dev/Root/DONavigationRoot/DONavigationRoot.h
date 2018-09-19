@@ -6,8 +6,8 @@
 //  Copyright © 2018年 dingzhiwen. All rights reserved.
 //
 
-#import "DORoot.h"
+#import "DOObject.h"
 
-@interface DONavigationRoot : DORoot
+@interface DONavigationRoot : DOObject
 
 @end

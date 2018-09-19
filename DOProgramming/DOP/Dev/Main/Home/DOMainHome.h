@@ -6,8 +6,8 @@
 //  Copyright © 2018年 dingzhiwen. All rights reserved.
 //
 
-#import "DORoot.h"
+#import "DOObject.h"
 
-@interface DOMainHome : DORoot
+@interface DOMainHome : DOObject
 
 @end
