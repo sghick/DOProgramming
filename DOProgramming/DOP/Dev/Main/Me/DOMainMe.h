@@ -6,8 +6,8 @@
 //  Copyright © 2018年 dingzhiwen. All rights reserved.
 //
 
-#import "DOObject.h"
+#import "DOPage.h"
 
-@interface DOMainMe : DOObject
+@interface DOMainMe : DOPage
 
 @end

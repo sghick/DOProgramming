@@ -11,7 +11,7 @@
 
 @implementation DOMainMe
 
-- (UIViewController *)featchViewControllerWithIdentifier:(NSString *)identifier {
+- (UIViewController *)controller {
     DOMainMeController *controller = [[DOMainMeController alloc] init];
     return controller;
 }

@@ -16,10 +16,15 @@
 		BDAFDB211F61389D00AFE926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAFDB1F1F61389D00AFE926 /* LaunchScreen.storyboard */; };
 		BDAFDB2C1F61389E00AFE926 /* DOProgrammingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAFDB2B1F61389E00AFE926 /* DOProgrammingTests.m */; };
 		BDAFDB371F61389E00AFE926 /* DOProgrammingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAFDB361F61389E00AFE926 /* DOProgrammingUITests.m */; };
-		BDAFDB9B1F625C0400AFE926 /* DOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAFDB9A1F625C0400AFE926 /* DOObject.m */; };
 		BDCFCFF12151076E006259B2 /* DOMainData.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFCFF02151076E006259B2 /* DOMainData.m */; };
 		BDCFCFF42151077B006259B2 /* DOMainResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFCFF32151077B006259B2 /* DOMainResponse.m */; };
 		BDCFCFF721510785006259B2 /* DOMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFCFF621510785006259B2 /* DOMainView.m */; };
+		BDCFD03F2151F9E3006259B2 /* DOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFD0362151F9E2006259B2 /* DOObject.m */; };
+		BDCFD0502151FB74006259B2 /* DOView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFD0482151FB73006259B2 /* DOView.m */; };
+		BDCFD0512151FB74006259B2 /* DOData.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFD0492151FB73006259B2 /* DOData.m */; };
+		BDCFD0522151FB74006259B2 /* DOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFD04A2151FB73006259B2 /* DOResponse.m */; };
+		BDCFD0532151FB74006259B2 /* DOPage.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFD04B2151FB73006259B2 /* DOPage.m */; };
+		BDCFD0542151FB74006259B2 /* DORoot.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCFD04D2151FB74006259B2 /* DORoot.m */; };
 		FE05FC05214E9D0100FB75F5 /* DONavigationRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = FE05FC04214E9D0100FB75F5 /* DONavigationRoot.m */; };
 		FE05FC08214E9D1600FB75F5 /* DOMainHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE05FC07214E9D1600FB75F5 /* DOMainHomeController.m */; };
 		FE05FC0C214E9E0300FB75F5 /* DOTabBarRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = FE05FC0B214E9E0300FB75F5 /* DOTabBarRoot.m */; };
@@ -62,15 +67,24 @@
 		BDAFDB321F61389E00AFE926 /* DOProgrammingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DOProgrammingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAFDB361F61389E00AFE926 /* DOProgrammingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOProgrammingUITests.m; sourceTree = "<group>"; };
 		BDAFDB381F61389E00AFE926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDAFDB991F625C0400AFE926 /* DOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOObject.h; sourceTree = "<group>"; };
-		BDAFDB9A1F625C0400AFE926 /* DOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOObject.m; sourceTree = "<group>"; };
 		BDCFCFEF2151076E006259B2 /* DOMainData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOMainData.h; sourceTree = "<group>"; };
 		BDCFCFF02151076E006259B2 /* DOMainData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOMainData.m; sourceTree = "<group>"; };
 		BDCFCFF22151077B006259B2 /* DOMainResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOMainResponse.h; sourceTree = "<group>"; };
 		BDCFCFF32151077B006259B2 /* DOMainResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOMainResponse.m; sourceTree = "<group>"; };
 		BDCFCFF521510785006259B2 /* DOMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOMainView.h; sourceTree = "<group>"; };
 		BDCFCFF621510785006259B2 /* DOMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOMainView.m; sourceTree = "<group>"; };
-		FE05FBF0214E949500FB75F5 /* DOProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOProtocol.h; sourceTree = "<group>"; };
+		BDCFD0362151F9E2006259B2 /* DOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOObject.m; sourceTree = "<group>"; };
+		BDCFD0382151F9E2006259B2 /* DOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOObject.h; sourceTree = "<group>"; };
+		BDCFD0442151FB73006259B2 /* DOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOView.h; sourceTree = "<group>"; };
+		BDCFD0452151FB73006259B2 /* DOData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOData.h; sourceTree = "<group>"; };
+		BDCFD0462151FB73006259B2 /* DOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOResponse.h; sourceTree = "<group>"; };
+		BDCFD0472151FB73006259B2 /* DOPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPage.h; sourceTree = "<group>"; };
+		BDCFD0482151FB73006259B2 /* DOView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOView.m; sourceTree = "<group>"; };
+		BDCFD0492151FB73006259B2 /* DOData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOData.m; sourceTree = "<group>"; };
+		BDCFD04A2151FB73006259B2 /* DOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOResponse.m; sourceTree = "<group>"; };
+		BDCFD04B2151FB73006259B2 /* DOPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPage.m; sourceTree = "<group>"; };
+		BDCFD04D2151FB74006259B2 /* DORoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORoot.m; sourceTree = "<group>"; };
+		BDCFD04E2151FB74006259B2 /* DORoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORoot.h; sourceTree = "<group>"; };
 		FE05FC03214E9D0100FB75F5 /* DONavigationRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DONavigationRoot.h; sourceTree = "<group>"; };
 		FE05FC04214E9D0100FB75F5 /* DONavigationRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DONavigationRoot.m; sourceTree = "<group>"; };
 		FE05FC06214E9D1600FB75F5 /* DOMainHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOMainHomeController.h; sourceTree = "<group>"; };
@@ -194,19 +208,11 @@
 		BDAFDB501F624F7500AFE926 /* Bin */ = {
 			isa = PBXGroup;
 			children = (
-				BDAFDB981F625C0400AFE926 /* Obj */,
+				BDCFD0352151F9E2006259B2 /* Base */,
+				BDCFD04C2151FB74006259B2 /* Frame */,
+				BDCFD0432151FB73006259B2 /* Feature */,
 			);
 			path = Bin;
-			sourceTree = "<group>";
-		};
-		BDAFDB981F625C0400AFE926 /* Obj */ = {
-			isa = PBXGroup;
-			children = (
-				FE05FBF0214E949500FB75F5 /* DOProtocol.h */,
-				BDAFDB991F625C0400AFE926 /* DOObject.h */,
-				BDAFDB9A1F625C0400AFE926 /* DOObject.m */,
-			);
-			path = Obj;
 			sourceTree = "<group>";
 		};
 		BDAFDB9C1F625C1C00AFE926 /* Dev */ = {
@@ -254,6 +260,39 @@
 				BDCFCFF32151077B006259B2 /* DOMainResponse.m */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		BDCFD0352151F9E2006259B2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFD0382151F9E2006259B2 /* DOObject.h */,
+				BDCFD0362151F9E2006259B2 /* DOObject.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BDCFD0432151FB73006259B2 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFD0472151FB73006259B2 /* DOPage.h */,
+				BDCFD04B2151FB73006259B2 /* DOPage.m */,
+				BDCFD0442151FB73006259B2 /* DOView.h */,
+				BDCFD0482151FB73006259B2 /* DOView.m */,
+				BDCFD0462151FB73006259B2 /* DOResponse.h */,
+				BDCFD04A2151FB73006259B2 /* DOResponse.m */,
+				BDCFD0452151FB73006259B2 /* DOData.h */,
+				BDCFD0492151FB73006259B2 /* DOData.m */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		BDCFD04C2151FB74006259B2 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFD04E2151FB74006259B2 /* DORoot.h */,
+				BDCFD04D2151FB74006259B2 /* DORoot.m */,
+			);
+			path = Frame;
 			sourceTree = "<group>";
 		};
 		FE05FBFA214E99AC00FB75F5 /* Root */ = {
@@ -450,17 +489,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCFD0542151FB74006259B2 /* DORoot.m in Sources */,
 				FE05FC08214E9D1600FB75F5 /* DOMainHomeController.m in Sources */,
+				BDCFD03F2151F9E3006259B2 /* DOObject.m in Sources */,
 				FE05FC12214E9EEE00FB75F5 /* DOMainHome.m in Sources */,
 				BDAFDB1C1F61389D00AFE926 /* DOProgramming.xcdatamodeld in Sources */,
+				BDCFD0522151FB74006259B2 /* DOResponse.m in Sources */,
 				FE05FC15214EA4D800FB75F5 /* DOMainMeController.m in Sources */,
 				BDCFCFF12151076E006259B2 /* DOMainData.m in Sources */,
-				BDAFDB9B1F625C0400AFE926 /* DOObject.m in Sources */,
 				BDCFCFF42151077B006259B2 /* DOMainResponse.m in Sources */,
 				BDCFCFF721510785006259B2 /* DOMainView.m in Sources */,
 				FE05FC05214E9D0100FB75F5 /* DONavigationRoot.m in Sources */,
+				BDCFD0502151FB74006259B2 /* DOView.m in Sources */,
 				FE05FC0C214E9E0300FB75F5 /* DOTabBarRoot.m in Sources */,
 				FE05FC18214EA4E700FB75F5 /* DOMainMe.m in Sources */,
+				BDCFD0532151FB74006259B2 /* DOPage.m in Sources */,
+				BDCFD0512151FB74006259B2 /* DOData.m in Sources */,
 				BDAFDB131F61389D00AFE926 /* AppDelegate.m in Sources */,
 				BDAFDB101F61389D00AFE926 /* main.m in Sources */,
 			);

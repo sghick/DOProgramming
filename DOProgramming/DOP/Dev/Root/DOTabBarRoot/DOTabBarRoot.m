@@ -10,17 +10,19 @@
 
 @implementation DOTabBarRoot
 
-- (void)makeKeyAndVisibleInWindow:(UIWindow *)window {
-    NSMutableArray *controllers = [NSMutableArray array];
-    for (id<DOProtocol> dobj in self.dobjects) {
-        UIViewController *vc = [dobj featchViewControllerWithIdentifier:nil];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-        [controllers addObject:nav];
+- (UIViewController *)controller {
+    if (![super controller]) {
+        NSMutableArray *controllers = [NSMutableArray array];
+        for (DOPage *dobj in self.dobjectMappers.allValues) {
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:dobj.controller];
+            [controllers addObject:nav];
+        }
+        UITabBarController *root = [[UITabBarController alloc] init];
+        root.viewControllers = controllers;
+        [super setController:root];
+        return root;
     }
-    UITabBarController *root = [[UITabBarController alloc] init];
-    root.viewControllers = controllers;
-    window.rootViewController = root;
-    [super makeKeyAndVisibleInWindow:window];
+    return [super controller];
 }
 
 @end

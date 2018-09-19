@@ -14,6 +14,8 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) DORoot *root;
+
 @end
 
 @implementation AppDelegate
@@ -21,14 +23,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window = window;
 //    DONavigationRoot *root = [DONavigationRoot demand];
     DOTabBarRoot *root = [DOTabBarRoot demand];
+    self.root = root;
+    self.window = root.window;
+    
     [root addDObject:[DOMainHome demand]];
     [root addDObject:[DOMainMe demand]];
 
-    [root makeKeyAndVisibleInWindow:window];
+    [root makeKeyAndVisible];
     return YES;
 }
 

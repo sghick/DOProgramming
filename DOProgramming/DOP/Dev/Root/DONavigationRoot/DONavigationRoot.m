@@ -14,11 +14,14 @@
 
 @implementation DONavigationRoot
 
-- (void)makeKeyAndVisibleInWindow:(UIWindow *)window {
-    UIViewController *controller = [self.dobjects.lastObject featchViewControllerWithIdentifier:nil];
-    UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:controller];
-    window.rootViewController = root;
-    [super makeKeyAndVisibleInWindow:window];
+- (UIViewController *)controller {
+    if (![super controller]) {
+        UIViewController *controller = [(DOPage *)self.dobjectMappers.allValues.lastObject controller];
+        UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:controller];
+        [super setController:root];
+        return root;
+    }
+    return [super controller];
 }
 
 @end

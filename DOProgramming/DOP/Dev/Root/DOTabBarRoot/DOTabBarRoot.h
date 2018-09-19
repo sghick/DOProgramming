@@ -6,8 +6,8 @@
 //  Copyright © 2018年 dingzhiwen. All rights reserved.
 //
 
-#import "DOObject.h"
+#import "DORoot.h"
 
-@interface DOTabBarRoot : DOObject
+@interface DOTabBarRoot : DORoot
 
 @end
